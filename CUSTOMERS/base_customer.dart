@@ -1,3 +1,4 @@
+import '../DB/list_of_user.dart';
 import '../MODEL/users_model.dart';
 
 abstract class ACustomer extends AUserModel {
@@ -10,5 +11,4 @@ abstract class ACustomer extends AUserModel {
     this._loginCart = loginCart;
     this._remainingDay = remainingDay;
   }
-
 }

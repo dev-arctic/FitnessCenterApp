@@ -1,4 +1,6 @@
-abstract class AUserModel {
+import '../DB/list_of_user.dart';
+
+abstract class AUserModel{
   late String _firstName;
   late String? _lastName;
   late String? _adress;
@@ -8,6 +10,9 @@ abstract class AUserModel {
   late final int _userId;
   late final String Identity;
   late String _tittle;
+
+
+  get getFirstName => _firstName;
 
   AUserModel({required String tittle, required String firstName, String? lastName ,  String? adress , String? mail, required String cellPhone, required int age, required int userId ,required String identity}) {
     this._firstName = firstName;
