@@ -1,19 +1,24 @@
+import '../CUSTOMERS/base_customer.dart';
+import '../EMPLOYEES/base_employee.dart';
 import '../MODEL/users_model.dart';
 
-class IUsersDB {
+abstract class IUsersDB {
+  
   
   late Map<String,List<AUserModel>> AllUserMap;
   late List<AUserModel> allUserList;
+  late List<AEmployee> employeeList;
+  late List<ACustomer> customerList;
 
-  void addUser(List<AUserModel> getUsers) {
-    // for (var item in getUsers) {
-    //   allUserList.add(item);
-    // }  
-  allUserList = [...getUsers];
-  for (var item in allUserList) {
-    print(item.getFirstName);
-  }
-  }
-  
+  void addAllUser(List<AUserModel> getUsers);
 
+  void addListEmployee(List<AEmployee> getEmployee);
+
+  void addListCustomer(List<ACustomer> getCustomer);  
+
+  void resultList();
+
+  void removeUserList() {
+    
+  }
 }
