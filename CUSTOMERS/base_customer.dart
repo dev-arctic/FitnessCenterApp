@@ -1,4 +1,3 @@
-import '../DB/list_of_user.dart';
 import '../MODEL/users_model.dart';
 
 abstract class ACustomer extends AUserModel {

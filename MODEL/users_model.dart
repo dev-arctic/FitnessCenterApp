@@ -1,4 +1,3 @@
-import '../DB/list_of_user.dart';
 
 abstract class AUserModel{
   late String _firstName;
